@@ -87,7 +87,7 @@ const Navbar = () => {
           <a href="#contact" className="hover:text-blue-600 transition-colors">Contact</a>
         </div>
         <button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:shadow-lg hover:shadow-blue-500/20 text-white px-6 py-2 rounded-full text-sm font-bold transition-all">
-          Launch Project
+          Beta Site
         </button>
       </div>
     </nav>
