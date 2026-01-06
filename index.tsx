@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { createRoot } from 'react-dom/client';
-import { 
-  BarChart3, 
-  Calendar, 
-  Code2, 
-  Database, 
-  LayoutDashboard, 
-  Music, 
-  Settings, 
-  ShoppingBag, 
+import {
+  BarChart3,
+  Calendar,
+  Code2,
+  Database,
+  LayoutDashboard,
+  Music,
+  Settings,
+  ShoppingBag,
   Users,
   MapPin,
   ChevronRight,
@@ -31,24 +31,24 @@ const Logo = ({ className = "w-10 h-10", showText = true }) => (
             </linearGradient>
           </defs>
           {/* Stylized 'C' with lightbulb area */}
-          <path 
-            d="M45,30 C30,30 25,45 25,50 C25,55 30,70 45,70" 
-            fill="none" 
-            stroke="url(#logoGrad)" 
-            strokeWidth="8" 
-            strokeLinecap="round" 
+          <path
+            d="M45,30 C30,30 25,45 25,50 C25,55 30,70 45,70"
+            fill="none"
+            stroke="url(#logoGrad)"
+            strokeWidth="8"
+            strokeLinecap="round"
           />
           {/* Lightbulb element inside C */}
           <circle cx="45" cy="50" r="8" fill="url(#logoGrad)" opacity="0.8" />
           <path d="M45,42 L45,38 M52,45 L56,43 M52,55 L56,57" stroke="url(#logoGrad)" strokeWidth="2" />
-          
+
           {/* Stylized 'T' with circuit traces */}
-          <path 
-            d="M55,30 L80,30 M67,30 L67,70" 
-            fill="none" 
-            stroke="url(#logoGrad)" 
-            strokeWidth="8" 
-            strokeLinecap="round" 
+          <path
+            d="M55,30 L80,30 M67,30 L67,70"
+            fill="none"
+            stroke="url(#logoGrad)"
+            strokeWidth="8"
+            strokeLinecap="round"
           />
           {/* Circuit dots */}
           <circle cx="80" cy="30" r="3" fill="url(#logoGrad)" />
@@ -121,7 +121,7 @@ const AppPreview = () => (
           <Music size={14} /> PIANO STUDIO MANAGEMENT
         </div>
         <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mb-8 leading-tight tracking-tight">
-          Harmonize Your <br/><span className="gradient-text">Studio Workflow</span>
+          Harmonize Your <br /><span className="gradient-text">Studio Workflow</span>
         </h2>
         <p className="text-slate-600 text-lg mb-10 leading-relaxed max-w-md">
           Born from a need for precision, our Piano Maestro app transforms how independent teachers manage students, scheduling, and billing.
@@ -150,7 +150,7 @@ const AppPreview = () => (
       <div className="relative">
         {/* Decorative elements */}
         <div className="absolute -inset-4 bg-gradient-to-r from-blue-500 to-purple-600 rounded-[2rem] blur-2xl opacity-5 animate-pulse-slow"></div>
-        
+
         <div className="relative bg-white rounded-[2rem] overflow-hidden shadow-2xl border border-slate-200 shadow-blue-500/10 transform rotate-1 group-hover:rotate-0 transition-transform duration-700">
           <div className="h-10 bg-slate-50 flex items-center px-5 gap-2 border-b border-slate-100">
             <div className="w-2.5 h-2.5 rounded-full bg-slate-300"></div>
@@ -171,7 +171,7 @@ const AppPreview = () => (
               </div>
               <div className="w-10 h-10 rounded-full bg-gradient-to-tr from-blue-600 to-purple-600 shadow-lg shadow-blue-500/20"></div>
             </div>
-            
+
             <div className="grid grid-cols-2 gap-4 mb-8">
               <div className="p-4 bg-slate-50 rounded-2xl border border-slate-100">
                 <div className="h-3 w-16 bg-blue-600/10 rounded mb-4"></div>
@@ -211,13 +211,13 @@ const App = () => {
   return (
     <div className="min-h-screen bg-white">
       <Navbar />
-      
+
       {/* Hero Section */}
       <section className="relative pt-40 pb-24 overflow-hidden bg-white">
         {/* Large stylized watermark logo background */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-blue-500/5 blur-[150px] rounded-full pointer-events-none"></div>
         <div className="absolute top-40 right-10 opacity-5 animate-pulse-slow">
-           <Logo className="w-96 h-96" showText={false} />
+          <Logo className="w-96 h-96" showText={false} />
         </div>
 
         <div className="container mx-auto px-6 text-center relative z-10">
@@ -227,7 +227,7 @@ const App = () => {
             </div>
           </div>
           <h1 className="text-6xl md:text-8xl font-black text-slate-900 mb-10 tracking-tight leading-[0.9]">
-            Architecture For <br/>
+            Architecture For <br />
             <span className="gradient-text">Modern Creators</span>
           </h1>
           <p className="text-xl text-slate-600 max-w-2xl mx-auto mb-14 leading-relaxed font-medium">
@@ -247,19 +247,19 @@ const App = () => {
             <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-purple-600"></div>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
-            <ServiceCard 
+            <ServiceCard
               icon={LayoutDashboard}
               title="Enterprise ERP"
               description="From Oracle to custom cloud deployments, we optimize the back-office architecture that powers global scale."
               tags={["ERP Implementation", "Cloud Arch", "Legacy Migration"]}
             />
-            <ServiceCard 
+            <ServiceCard
               icon={Users}
               title="CRM & Sales Tech"
               description="Unified customer views and automated sales funnels that turn raw data into predictable revenue growth."
               tags={["Salesforce", "Custom CRMs", "Lead Automation"]}
             />
-            <ServiceCard 
+            <ServiceCard
               icon={ShoppingBag}
               title="eCommerce Ops"
               description="High-transaction storefronts built for speed, resilience, and conversion-focused user experiences."
@@ -352,7 +352,7 @@ const App = () => {
               <ul className="space-y-4 text-slate-500 text-sm font-medium leading-relaxed">
                 <li>Durham, NC</li>
                 <li>Research Triangle Park</li>
-                <li>helo@createch.app</li>
+                <li>hello@createch.app</li>
                 <li>(919)998-6818</li>
               </ul>
             </div>
