@@ -352,8 +352,8 @@ const App = () => {
               <ul className="space-y-4 text-slate-500 text-sm font-medium leading-relaxed">
                 <li>Durham, NC</li>
                 <li>Research Triangle Park</li>
-                <li>hello@createch.com</li>
-                <li>(919) 555-0123</li>
+                <li>helo@createch.app</li>
+                <li>(919)998-6818</li>
               </ul>
             </div>
           </div>
